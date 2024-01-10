@@ -5,14 +5,15 @@
 
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand"><h3><p class="fst-italic">Danh sách phòng ban</p></h3></a>
+          <a class="navbar-brand"><h3><p style="font-family: 'Oswald', sans-serif; font-weight: bold;">Danh sách phòng ban</p></h3></a>
 
-          <form action="" class="d-flex" role="search">
-            <input class="form-control me-2" name="key" type="search" placeholder="Tìm kiếm" aria-label="Search">
+          <form action="{{url('tim-kiem')}}" class="d-flex" role="search" method="GET">
+            <input class="form-control me-2" name="tukhoa" type="search" placeholder="Tìm kiếm tên, mã phòng ban..." aria-label="Search">
             <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
           </form>
         </div>
       </nav>
+      <hr>
 
     <div class="row mt-5 mb-3">
         <div class="col-md-12 ">

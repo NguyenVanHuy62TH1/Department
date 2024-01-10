@@ -16,6 +16,15 @@ class DepartmentController extends Controller
         return view('index', compact('departments'));
     }
 
+    public function timkiem(){
+        $tukhoa = request('tukhoa');
+
+        // Sử dụng Eloquent Query Builder để tìm kiếm
+        $departments = Department::where('name', 'LIKE', "%$tukhoa%")->orderBy('d_no', 'desc')->get();
+    
+        // Trả về view 'search' với dữ liệu tương ứng
+        return view('search', compact('tukhoa', 'departments'));
+    }
     /**
      * Show the form for creating a new resource.
      */

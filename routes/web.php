@@ -15,8 +15,5 @@ use App\Http\Controllers\DepartmentController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('departments', DepartmentController::class);
+Route::get('/tim-kiem', [DepartmentController::class,'timkiem'])->name('departments.timkiem');;

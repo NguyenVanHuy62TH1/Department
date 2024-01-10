@@ -4,7 +4,7 @@
 <div class ="container">
     <div class="row mt-5 mb-3">
         <div class="col-md-6">
-            <h3><p class="fst-italic">Chỉnh sửa thông tin</p></h3>
+            <h3><p style="font-family: 'Oswald', sans-serif; font-weight: bold;">Chỉnh sửa thông tin</p></h3>
         </div>
         <div class="col-md-6">
             <a href="{{ route('departments.index') }}" class="btn btn-outline-success float-end"
@@ -12,7 +12,7 @@
                 onmouseover="this.style.transform='scale(1.1)'"
                 onmouseout="this.style.transform='scale(1)'"
                 onclick="this.style.transform='scale(1)'">
-                Danh sách phòng ban
+                Trang chủ
             </a>
         </div>
         <hr>
